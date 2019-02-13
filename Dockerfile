@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:bionic
 WORKDIR /ardupilot
 
 RUN useradd -U -d /ardupilot ardupilot && \
