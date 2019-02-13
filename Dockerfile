@@ -7,8 +7,7 @@ RUN useradd -U -d /ardupilot ardupilot && \
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install --no-install-recommends -y \
     lsb-release \
     sudo \
-    software-properties-common \
-    python-software-properties && \
+    software-properties-common && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV USER=ardupilot
